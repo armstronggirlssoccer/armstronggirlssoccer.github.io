@@ -74,7 +74,8 @@ footer {
     bottom: 0;
     left: 0;
     width: 100%;
-    color: #eeeeee;
+    font-size: 1.2em;
+    color: #fff;
     z-index: -1;
 }
 .scrolldown {
@@ -97,11 +98,11 @@ section p {
     font-weight: 300;
     text-align: left;
     max-width: 600px;
-    margin: auto;
+    margin: .75em auto;
     padding: 0;
 }
 section a {
-    display: block;
+    display: inline;
     padding: 8px;
     width: 120px;
     margin: 8px auto 0 auto;
@@ -147,29 +148,31 @@ section a:hover {
     background-image: url("/images/272A9293.jpg");   
     background-image: url("/images/1.jpg");   
     background-image: url("/images/272A7697.jpg");   
-    */
     background-image: url("/images/272A1988.jpg");   
+    */
+    background-image: url("/images/272A8818.jpg");   
 }
 .bg2 {
     /*
     height: 700px;
     background-image: url("/images/2.jpg");   
     */
-    background-image: url("/images/272A7943.jpg");   
+    background-image: url("/images/272A1319.jpg");   
 }
 .bg3 {
     /*
     height: 700px;
     background-image: url("/images/3.jpg");
-    */
     background-image: url("/images/272A0976.jpg");
+    */
+    background-image: url("/images/272A1247.jpg");   
 }
 .bg4 {
     /*
     height: 100%;
     background-image: url("/images/4.jpg");
     */
-    background-image: url("/images/272A1271.jpg");
+    background-image: url("/images/272A1711.jpg");
 }
 
 @media only screen and (max-device-width: 1024px) {

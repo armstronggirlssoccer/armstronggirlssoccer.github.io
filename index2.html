@@ -1,53 +1,28 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Parallax Effect</title>
+    <title>Redesign</title>
     <style>
         * {
             margin: 0;
             padding: 0;
         }
-        body {
-            background: green;
+        .background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
         }
-        section {
-            margin: 10px;
-            padding: 10px;
-            background: red;
-            height: 400px;
-            background-position: center;
-            background-size: cover 100%;
-            background-repeat: no-repeat;
+        img {
+            height: 100vh;
+            width: auto;
+            margin: auto;
         }
-        .one {
-            background-image: url("images/1.jpg");
-        }
-        .two {
-            background-image: url("images/2.jpg");
-        }
-        .three {
-            background-image: url("images/3.jpg");
-        }
-        .four {
-            background-image: url("images/4.jpg");
-        }
-    </style>
+</style>
 </head>
 <body>
-    <section class="one">
-        <h1>Section One</h1>
-        <p>Text for section one</p>
-    </section>
-    <section class="two">
-        <h1>Section Two</h1>
-        <p>Text for section two</p>
-    </section>
-    <section class="three">
-        <h1>Section Three</h1>
-        <p>Text for section three</p>
-    </section>
-    <section class="four">
-        <h1>Section Four</h1>
-        <p>Text for section four</p>
-    </section>
+    <div class="background">
+        <img src="images/2.jpg">
+    </div>
 </body>
