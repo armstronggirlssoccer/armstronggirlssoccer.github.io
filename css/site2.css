@@ -87,6 +87,7 @@ section {
     padding: 1em;
     /* background: #232323; */
     background: rgba(4, 51, 113, .9);
+    /* background: rgba(0, 0, 0, .9); */
     color: #dddddd;
 }
 section h1 {
@@ -104,7 +105,6 @@ section p {
 section a {
     display: inline;
     padding: 8px;
-    width: 120px;
     margin: 8px auto 0 auto;
     background: rgba(4, 51, 113, .8);
     color: #dddddd;
@@ -136,7 +136,7 @@ section a:hover {
     text-transform: uppercase;
     color: #ffffff;
 }
-.bg1, .bg2, .bg3, .bg4 {
+.bg1, .bg2, .bg3, .bg4, .bg5, .bg6, .bg7, .bg8 {
     height: 100%;
     min-height: 100%;
 }
@@ -157,25 +157,39 @@ section a:hover {
     /*
     height: 700px;
     background-image: url("/images/2.jpg");   
-    */
     background-image: url("/images/272A1319.jpg");   
+    */
+    background-image: url("/images/emily.jpg");   
 }
 .bg3 {
     /*
     height: 700px;
     background-image: url("/images/3.jpg");
     background-image: url("/images/272A0976.jpg");
-    */
     background-image: url("/images/272A1247.jpg");   
+    */
+    background-image: url("/images/hannah.jpg");   
 }
 .bg4 {
     /*
     height: 100%;
     background-image: url("/images/4.jpg");
+    background-image: url("/images/272A1711.jpg");
     */
+    background-image: url("/images/jessica.jpg");
+}
+.bg5 {
+    background-image: url("/images/morgan.jpg");
+}
+.bg6 {
+    background-image: url("/images/olivia.jpg");
+}
+.bg7 {
+    background-image: url("/images/272A1247.jpg");   
+}
+.bg8 {
     background-image: url("/images/272A1711.jpg");
 }
-
 @media only screen and (max-device-width: 1024px) {
     header {
         width: 60px;
