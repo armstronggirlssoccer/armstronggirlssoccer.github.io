@@ -9,15 +9,22 @@
         <link rel="apple-touch-icon" sizes="180x180" href="/images/logo_white_on_blue_180x180.png">
         <script src="js/app.js"></script>
         <style>
-            html {
-                background:  rgba(4, 51, 113, 0.9) url("images/272A1342.jpg");
+            .pageBg {
+                background:  rgba(4, 51, 113, 0.1) url("images/272A1342.jpg");
                 background-position: center; 
                 background-size: cover; 
                 background-attachment: fixed;
+                height: 100%;
+                min-height: 100%;
                 z-index: 0;
             }
-            main {
-                background: rgba(0, 0, 0, 0.6);
+            .pageFg {
+                background:  rgba(0, 0, 0, 0.3);
+                position: fixed;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
                 padding: 5px; 
                 overflow-y: scroll; 
                 -webkit-overflow-scrolling: touch;
@@ -47,114 +54,120 @@
             </nav>
         </header>
         <main>
-            <h1>2019 Calendar</h1>
-            <ul class="event">
-                <!--
-                <li>
-                    <p>Order Apparel</p>
-                    <p>Online Store</p>
-                    <p>8/2-8/13</p>
-                    <p>(See email for instructions)</p>
-                </li>
-                <li>
-                    <p>Leadership Practice</p>
-                    <p>Sonnesyn Elementary</p>
-                    <p>8/5-8/9 9-11am</p>
-                </li>
-                <li>
-                    <p>Player Registration</p>
-                    <p>AHS Athletic Website</p>
-                    <p>Register by Friday, 8/9</p>
-                </li>
-                <li>
-                    <p>Tryouts</p>
-                    <p>Sonnesyn Elementary</p>
-                    <p>8/12-8/16 7:30-10am</p>
-                </li>
-                <li>
-                    <p>Varsity Scrimmage</p>
-                    <p>Eden Prairie High School</p>
-                    <p>8/17 9am-1pm</p>
-                </li>
-                <li>
-                    <p>Season Kickoff Meeting</p>
-                    <p>AHS Auditorium (Left Balcony)</p>
-                    <p>Monday 8/19 7:00pm</p>
-                    <p>(uniforms distributed at 7pm)</p>
-                </li>
-                <li>
-                    <p>Team Pictures</p>
-                    <p>AHS Stadium</p>
-                    <p>Tuesday 8/20 2pm</p>
-                    <p>(Wear red)</p>
-                </li>
-                <li>
-                    <p>Waffle Dinner</p>
-                    <p>AHS Cafeteria</p>
-                    <p>Tuesday 9/24 6-8pm</p>
-                    <p><a target="_blank" rel=noopener noreferrer" href="https://www.signupgenius.com/go/30e0b4dadaf22a46-waffle1">Volunteer</a></p>
-                </li>
-                <li>
-                    <p>Senior Night</p>
-                    <p>Varsity vs. Champlin Park</p>
-                    <p>Thursday 9/26</p>
-                </li>
-                -->
-                <li>
-                    <p>
-                        <a target="_blank" rel="noopener noreferrer"
-                            href="https://www.nwsconference.org/g5-bin/client.cgi?cwellOnly=1&G5statusflag=view&schoolname=&school_id=1743&G5button=13&G5genie=2&vw_schoolyear=1&vw_agl=11199-3-879,">
-                            Varsity Game Schedule
-                        </a>
-                    </p>
-                </li>
-                <li>
-                    <p>
-                        <a target="_blank" rel="noopener noreferrer"
-                            href="https://www.nwsconference.org/g5-bin/client.cgi?cwellOnly=1&G5statusflag=view&schoolname=&school_id=1743&G5button=13&G5genie=2&vw_schoolyear=1&vw_agl=11199-3-11,">
-                            JV Game Schedule
-                        </a>
-                    </p>
-                </li>
-                <li>
-                    <p>
-                        <a target="_blank" rel="noopener noreferrer"
-                            href="https://www.nwsconference.org/g5-bin/client.cgi?cwellOnly=1&G5statusflag=view&schoolname=&school_id=1743&G5button=13&G5genie=2&vw_schoolyear=1&vw_agl=11199-3-147,">
-                            9th/10th Game Schedule</a>
-                    </p>
-                </li>
-                <li>
-                    <p>Concessions Help</p>
-                    <p>Boys Home Games</p>
-                    <p><a target="_blank" rel="noopener noreferrer"
-                            href="https://www.signupgenius.com/go/70a0849a4a722a57-ahsgirls2">Volunteer</a></p>
-                </li>
-                <li>
-                    <p>Game Help</p>
-                    <p>Girls Home Games</p>
-                    <p><a target="_blank" rel="noopener noreferrer" href="https://www.signupgenius.com/go/4090F44ADA72DA02-varsity">Volunteer</a></p>
-                </li>
-                <li>
-                    <p>Year-End Banquet</p>
-                    <p>Edinburgh, Brooklyn Park</p>
-                    <p>Sunday 11/3</p>
-                </li>
-                <li>
-                    <p>Varsity Practice</p>
-                    <p>M-Th 3:30-5pm Sonnesyn, Fri 6am Turf</p>
-                </li>
-                <li>
-                    <p>JV & 9th/10th Practice</p>
-                    <p>M-F 3:45-5:15pm Sonnesyn</p>
-                </li>
-                <li>
-                    <p>
-                        <a target="_blank" rel="noopener noreferrer" href="https://ahsfalconsoccer.shutterfly.com/busschedule">
-                            Team Bus Schedules
-                        </a>
-                    </p>
-                </li>
-            </ul>
+            <div class="pageBg">
+
+            </div>
+            <div class="pageFg">
+
+                <h1>2019 Calendar</h1>
+                <ul class="event">
+                    <!--
+                    <li>
+                        <p>Order Apparel</p>
+                        <p>Online Store</p>
+                        <p>8/2-8/13</p>
+                        <p>(See email for instructions)</p>
+                    </li>
+                    <li>
+                        <p>Leadership Practice</p>
+                        <p>Sonnesyn Elementary</p>
+                        <p>8/5-8/9 9-11am</p>
+                    </li>
+                    <li>
+                        <p>Player Registration</p>
+                        <p>AHS Athletic Website</p>
+                        <p>Register by Friday, 8/9</p>
+                    </li>
+                    <li>
+                        <p>Tryouts</p>
+                        <p>Sonnesyn Elementary</p>
+                        <p>8/12-8/16 7:30-10am</p>
+                    </li>
+                    <li>
+                        <p>Varsity Scrimmage</p>
+                        <p>Eden Prairie High School</p>
+                        <p>8/17 9am-1pm</p>
+                    </li>
+                    <li>
+                        <p>Season Kickoff Meeting</p>
+                        <p>AHS Auditorium (Left Balcony)</p>
+                        <p>Monday 8/19 7:00pm</p>
+                        <p>(uniforms distributed at 7pm)</p>
+                    </li>
+                    <li>
+                        <p>Team Pictures</p>
+                        <p>AHS Stadium</p>
+                        <p>Tuesday 8/20 2pm</p>
+                        <p>(Wear red)</p>
+                    </li>
+                    <li>
+                        <p>Waffle Dinner</p>
+                        <p>AHS Cafeteria</p>
+                        <p>Tuesday 9/24 6-8pm</p>
+                        <p><a target="_blank" rel=noopener noreferrer" href="https://www.signupgenius.com/go/30e0b4dadaf22a46-waffle1">Volunteer</a></p>
+                    </li>
+                    <li>
+                        <p>Senior Night</p>
+                        <p>Varsity vs. Champlin Park</p>
+                        <p>Thursday 9/26</p>
+                    </li>
+                    -->
+                    <li>
+                        <p>
+                            <a target="_blank" rel="noopener noreferrer"
+                                href="https://www.nwsconference.org/g5-bin/client.cgi?cwellOnly=1&G5statusflag=view&schoolname=&school_id=1743&G5button=13&G5genie=2&vw_schoolyear=1&vw_agl=11199-3-879,">
+                                Varsity Game Schedule
+                            </a>
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <a target="_blank" rel="noopener noreferrer"
+                                href="https://www.nwsconference.org/g5-bin/client.cgi?cwellOnly=1&G5statusflag=view&schoolname=&school_id=1743&G5button=13&G5genie=2&vw_schoolyear=1&vw_agl=11199-3-11,">
+                                JV Game Schedule
+                            </a>
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <a target="_blank" rel="noopener noreferrer"
+                                href="https://www.nwsconference.org/g5-bin/client.cgi?cwellOnly=1&G5statusflag=view&schoolname=&school_id=1743&G5button=13&G5genie=2&vw_schoolyear=1&vw_agl=11199-3-147,">
+                                9th/10th Game Schedule</a>
+                        </p>
+                    </li>
+                    <li>
+                        <p>Concessions Help</p>
+                        <p>Boys Home Games</p>
+                        <p><a target="_blank" rel="noopener noreferrer"
+                                href="https://www.signupgenius.com/go/70a0849a4a722a57-ahsgirls2">Volunteer</a></p>
+                    </li>
+                    <li>
+                        <p>Game Help</p>
+                        <p>Girls Home Games</p>
+                        <p><a target="_blank" rel="noopener noreferrer" href="https://www.signupgenius.com/go/4090F44ADA72DA02-varsity">Volunteer</a></p>
+                    </li>
+                    <li>
+                        <p>Year-End Banquet</p>
+                        <p>Edinburgh, Brooklyn Park</p>
+                        <p>Sunday 11/3</p>
+                    </li>
+                    <li>
+                        <p>Varsity Practice</p>
+                        <p>M-Th 3:30-5pm Sonnesyn, Fri 6am Turf</p>
+                    </li>
+                    <li>
+                        <p>JV & 9th/10th Practice</p>
+                        <p>M-F 3:45-5:15pm Sonnesyn</p>
+                    </li>
+                    <li>
+                        <p>
+                            <a target="_blank" rel="noopener noreferrer" href="https://ahsfalconsoccer.shutterfly.com/busschedule">
+                                Team Bus Schedules
+                            </a>
+                        </p>
+                    </li>
+                </ul>
+            </div>
         </main>
         <footer>
         </footer>

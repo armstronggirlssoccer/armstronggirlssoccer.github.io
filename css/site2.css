@@ -26,6 +26,7 @@ header {
     background: rgba(4, 51, 113, .8);
     box-shadow: 2px 4px 8px 0 rgba(0, 0, 0, .4), 4px 6px 20px 0 rgba(0, 0, 0, 0.15);
     cursor: pointer;
+    z-index: 9;
 }
 .toggle {
     position: absolute;
@@ -45,7 +46,6 @@ nav {
     left: 0px;
     bottom: auto;
     width: 0;
-    z-index: 9;
     background: rgba(4, 51, 113, .8);
     border-radius: 0 10px 10px 0;
     box-shadow: 2px 4px 8px 0 rgba(0, 0, 0, .4), 4px 6px 20px 0 rgba(0, 0, 0, 0.15);
@@ -193,6 +193,7 @@ section a:hover {
 .bg9 {
     background-image: url("/images/272A1711.jpg");
 }
+
 @media only screen and (max-device-width: 1024px) {
     header {
         width: 60px;
