@@ -97,7 +97,7 @@ section h1 {
 }
 section p {
     font-weight: 300;
-    text-align: left;
+    text-align: middle;
     max-width: 600px;
     margin: .75em auto;
     padding: 0;
@@ -105,7 +105,7 @@ section p {
 section a {
     display: inline;
     padding: 8px;
-    margin: 8px auto 0 auto;
+    margin: .75em auto;
     background: rgba(4, 51, 113, .8);
     color: #dddddd;
     border: 1px solid #042e71;
@@ -136,7 +136,7 @@ section a:hover {
     text-transform: uppercase;
     color: #ffffff;
 }
-.bg1, .bg2, .bg3, .bg4, .bg5, .bg6, .bg7, .bg8 {
+.bg1, .bg2, .bg3, .bg4, .bg5, .bg6, .bg7, .bg8, .bg9 {
     height: 100%;
     min-height: 100%;
 }
@@ -185,9 +185,12 @@ section a:hover {
     background-image: url("/images/olivia.jpg");
 }
 .bg7 {
-    background-image: url("/images/272A1247.jpg");   
+    background-image: url("/images/sam.jpg");   
 }
 .bg8 {
+    background-image: url("/images/272A1247.jpg");   
+}
+.bg9 {
     background-image: url("/images/272A1711.jpg");
 }
 @media only screen and (max-device-width: 1024px) {
