@@ -1,0 +1,43 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <style>
+      body { background-color: red; }
+    </style>
+  </head>
+  <body>
+    <h1>New Home Page</h1>
+    <img src="https://photos.smugmug.com/photos/i-TpwdHKJ/5/O/i-TpwdHKJ-O.jpg">
+    <script>
+
+function getRndInteger(min, max) {
+  return Math.floor(Math.random() * (max - min) ) + min;
+}
+
+// https://api.smugmug.com/api/v2/album/KLV6Jj!images?APIKey=dX8SwSBpKnnxGZTfzDGGfsv54WhV6gP4
+var uri = 'https://api.smugmug.com/api/v2/album/';
+var albumID = 'KLV6Jj';
+var apiKey = 'dX8SwSBpKnnxGZTfzDGGfsv54WhV6gP4';
+
+var request = new Request(`${uri}${albumID}!images?APIKey=${apiKey}`, {
+  method: 'GET',
+  mode: 'cors',
+  redirect: 'follow',
+  headers: new Headers({
+    'accept': 'application/json'
+  })
+});
+fetch(request)
+  .then(response => response.json())
+  .then(data => {
+    var images = [];
+    data.Response.AlbumImage.forEach(el => images.push(el.Uris.LargestImage.Uri));
+    // console.log('number of images: ' + images.length);
+    var max = images.length;
+    for (var i = 0; i < 3; i++) {
+      console.log('Image: ' + images[getRndInteger(0,max)]);
+    }
+  });
+    </script>
+  </body>
+</html>
