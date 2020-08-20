@@ -1,0 +1,63 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <title>Armstrong Girls Soccer - Booster Donation</title>
+    </head>
+    <body>
+        <header>
+            <img src="images/logo.png">
+        </header>
+        <main>
+            <h1>2020 Booster Donation</h1>
+            <p>Thanks for making your Booster Donation online this year, via Paypal!</p>
+            <!-- Paypal Div -->
+            <div id="paypal-button-container"></div>
+            <section>
+                <p>
+                    To pay by check:
+                    <ul>
+                        <li>Make your check for $75 payable to <strong>Armstrong Girls Soccer Booster Club</strong></li>
+                        <li>Mail check to
+                            <address>
+                                Armstrong Girls Soccer Booster Club
+                                4280 Oakview Lane N
+                                Plymouth, MN 55442
+                            </address>
+                        </li>
+                    </ul> 
+                </p>
+            </section>
+        </main>
+        <footer>
+            Copyright &copy; 2020 Armstrong Girls Soccer Booster Club. All rights reserved.
+        </footer>
+        <!-- Paypal Code -->
+        <script src="https://www.paypal.com/sdk/js?client-id=AWPWlIlcb2ZzKknaN1xQ88k1hhpKOY5gHATcDD69M0JwSgerKs2VcBALj5O_ZtjdlWniT5KHHDnpPrQm&currency=USD" data-sdk-integration-source="button-factory"></script>
+        <script>
+        paypal.Buttons({
+            style: {
+                shape: 'rect',
+                color: 'silver',
+                layout: 'vertical',
+                label: 'pay',
+
+            },
+            createOrder: function(data, actions) {
+                return actions.order.create({
+                    purchase_units: [{
+                        amount: {
+                            value: '75.00'
+                        }
+                    }]
+                });
+            },
+            onApprove: function(data, actions) {
+                return actions.order.capture().then(function(details) {
+                    alert('Transaction completed by ' + details.payer.name.given_name + '!');
+                });
+            }
+        }).render('#paypal-button-container');
+        </script>
+
+    </body>
+</html>
