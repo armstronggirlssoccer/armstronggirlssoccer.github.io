@@ -98,14 +98,14 @@ section {
 }
 section h1 {
     color: #fff;
-    margin: 0 0 .5em 0;
+    margin: 0;
     font-weight: 600;
 }
 section p {
     font-weight: 300;
     text-align: middle;
     max-width: 600px;
-    margin: .75em auto;
+    margin: .3em auto .75em auto;
     padding: 0;
 }
 section a {
@@ -140,8 +140,10 @@ section a:hover {
     font-weight: 600;
     letter-spacing: .25em;
     text-transform: uppercase;
+    text-shadow: 2px 2px 4px #333;
     color: #ffffff;
 }
+
 .bg1, .bg2, .bg3, .bg4, .bg5, .bg6, .bg7, .bg8, .bg9 {
     height: 100%;
     min-height: 100%;
@@ -157,8 +159,9 @@ section a:hover {
     background-image: url("/images/272A1988.jpg");   
     background-image: url("/images/272A8818.jpg");   
     background-image: url("/images/AHS-5893.jpg");   
-    */
     background-image: url("/images/272A2627.jpg");   
+    */
+    background-image: url("/images/272A0187.jpg");   
 }
 .bg2 {
     /*
@@ -166,8 +169,9 @@ section a:hover {
     background-image: url("/images/2.jpg");   
     background-image: url("/images/272A1319.jpg");   
     background-image: url("/images/emily.jpg");   
-    */
     background-image: url("/images/dpL7G0124.jpg");   
+    */
+    background-image: url("/images/272A9592.jpg");   
 }
 .bg3 {
     /*
@@ -175,8 +179,9 @@ section a:hover {
     background-image: url("/images/3.jpg");
     background-image: url("/images/272A0976.jpg");
     background-image: url("/images/272A1247.jpg");   
-    */
     background-image: url("/images/dpL7G0086.jpg");   
+    */
+    background-image: url("/images/272A8415.jpg");   
 }
 .bg4 {
     /*
@@ -199,8 +204,11 @@ section a:hover {
     background-image: url("/images/272A1247.jpg");   
 }
 .bg9 {
+    /*
+    background-image: url("/images/272A1711.jpg");
     background-image: url("/images/272A1247.jpg");   
-    /* background-image: url("/images/272A1711.jpg"); */
+    */
+    background-image: url("/images/272A8818.jpg");   
 }
 .cancelled {
   text-decoration: line-through;
