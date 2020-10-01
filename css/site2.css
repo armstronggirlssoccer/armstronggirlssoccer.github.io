@@ -160,8 +160,9 @@ section a:hover {
     background-image: url("/images/272A8818.jpg");   
     background-image: url("/images/AHS-5893.jpg");   
     background-image: url("/images/272A2627.jpg");   
-    */
     background-image: url("/images/272A0187.jpg");   
+    */
+    background-image: url("/images/272A9755.jpg");
 }
 .bg2 {
     /*
@@ -170,8 +171,9 @@ section a:hover {
     background-image: url("/images/272A1319.jpg");   
     background-image: url("/images/emily.jpg");   
     background-image: url("/images/dpL7G0124.jpg");   
-    */
     background-image: url("/images/272A9592.jpg");   
+    */
+    background-image: url("/images/272A9657.jpg");   
 }
 .bg3 {
     /*
@@ -180,8 +182,9 @@ section a:hover {
     background-image: url("/images/272A0976.jpg");
     background-image: url("/images/272A1247.jpg");   
     background-image: url("/images/dpL7G0086.jpg");   
-    */
     background-image: url("/images/272A8415.jpg");   
+    */
+    background-image: url("/images/272A9529.jpg");   
 }
 .bg4 {
     /*
@@ -201,14 +204,17 @@ section a:hover {
     background-image: url("/images/sam.jpg");   
 }
 .bg8 {
+    /* 
+    */
     background-image: url("/images/272A1247.jpg");   
 }
 .bg9 {
     /*
     background-image: url("/images/272A1711.jpg");
     background-image: url("/images/272A1247.jpg");   
-    */
     background-image: url("/images/272A8818.jpg");   
+    */
+    background-image: url("/images/272A9580.jpg");
 }
 .cancelled {
   text-decoration: line-through;
