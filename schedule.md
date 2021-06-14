@@ -1,5 +1,6 @@
 ---
 title: schedule
+permalink: /schedule/
 ---
 
 # Schedules

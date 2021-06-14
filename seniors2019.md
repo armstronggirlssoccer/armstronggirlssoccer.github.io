@@ -1,5 +1,6 @@
 ---
 title: Seniors 2019
+permalink: /seniors-2019/
 ---
 Congrats Seniors!
 =================
