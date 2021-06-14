@@ -1,6 +1,6 @@
 ---
 title: Booster Donation
-permalink: /donation/
+permalink: /donate/
 ---
 # Booster Donation
 
