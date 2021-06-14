@@ -33,9 +33,9 @@ Still a Few Games Left!
 
 Come on out and cheer on the girls!
 
-[Calendar](calendar.html)
+[Schedule](/schedule/)
 
 Armstrong Girls Soccer
 ----------------------
 
-[More Pictures](pictures.html)
+[More Pictures](/photo/)

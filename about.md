@@ -10,11 +10,10 @@ Fundraising efforts and donations are an essential part of the soccer program. T
 
 ## Donations
 
-​To keep the program successful for all athletes, we need your financial help. The AHS Girls Soccer Booster Club is asking for a minimum donation of $75 per player or $100 per family (who have 2 or more players in the program).  You can find the Booster Club donation page [HERE](/donate.html). Thank you for your support!
+​To keep the program successful for all athletes, we need your financial help. The AHS Girls Soccer Booster Club is asking for a minimum donation of $75 per player or $100 per family (who have 2 or more players in the program).  You can find the Booster Club donation page [HERE](/donate/). Thank you for your support!
 
 ## Other Links
 *   [AHS Athletics](https://ahs.rdale.org/activities/athletics)
-*   [Pictures](pictures.html)
 *   [Video](https://youtu.be/BOrrPlzKpuA)
 
 
