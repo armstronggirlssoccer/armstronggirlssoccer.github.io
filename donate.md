@@ -1,6 +1,6 @@
 ---
-layout: default
 title: Booster Donation
+permalink: /donation/
 ---
 # Booster Donation
 

@@ -10,7 +10,9 @@ defaults:
     values:
       layout: "default"
 
-
+twitter:
+  username: GirlsArmstrong
+  card: summary
 plugins:
   - jekyll-feed
   - jekyll-sitemap

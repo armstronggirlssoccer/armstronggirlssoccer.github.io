@@ -1,5 +1,6 @@
 ---
 title: Failure dontation
+permalink: /cancel/
 ---
 # Booster Donation</h1>
 

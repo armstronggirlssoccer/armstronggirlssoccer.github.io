@@ -1,5 +1,6 @@
 ---
 title: New Players Information
+permalink: /new-players/
 ---
 
 # Welcome new AHS soccer players

@@ -1,5 +1,6 @@
 ---
 title: Thanks for your support
+permalink: /completed/
 ---
 
 # Booster Donation
