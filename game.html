@@ -1,0 +1,17 @@
+---
+layout: default
+title: Games
+---
+
+<h1>Games</h1>
+
+<ul>
+  {% for game in site.games %}
+  <li>
+    <h2>{{game.venue}}</h2>
+    <h3>{{game.team}}</h3>
+    <p>{{game.date}}</p>
+    <p>{{game.location}}</p>
+  </li>
+  {% endfor %}
+</ul>

@@ -1,0 +1,25 @@
+<div class="next-match-widget">
+  <h5 class="title">Next Match</h5>
+  <div class="nmw-wrap">
+    <ul class="match-teams-vs">
+      <li class="team-logo"><strong>Falcons</strong> </li>
+      <li class="mvs"> <strong class="vs">VS</strong> </li>
+      {% for game in site.games %}
+      <li class="team-logo"><strong>{{game.team}}</strong> </li>
+      {% endfor %}
+    </ul>
+    <ul class="upcoming-game nmw-txt">
+      {% for game in site.games %}
+      <li>
+        <h2>{{game.venue}}</h2>
+        <h3>⚽️ {{game.team}}</h3>
+  
+        <p>🏟 {{game.location}}</p>
+        <p>📅 {{game.date}}</p>
+        {% if game.venue == "home" %} 🎟 Adults $7, Students & Senior Citizens $5
+        {% endif %}
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+</div>

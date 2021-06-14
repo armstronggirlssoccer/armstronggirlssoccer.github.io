@@ -1,0 +1,166 @@
+html {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  text-align: left;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  line-height: 1.5;
+  position: relative;
+  color: #1e2024;
+}
+
+a {
+  color: rgba(194, 0, 38, 1);
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+header {
+  width: 100%;
+  min-height: 80px;
+  padding: 1rem;
+  background: rgba(23, 63, 141, 1);
+  text-align: center;
+  // Message padding
+  margin-top: 64px;
+}
+
+footer {
+  width: 100%;
+  background-color: #efefef;
+  padding: 1rem 2rem;
+  text-align: center;
+}
+
+main {
+  box-sizing: border-box;
+  width: auto;
+  margin: 0 auto;
+  max-width: 1080px;
+  padding: 0 2rem;
+}
+
+section {
+  width: 66.6667%;
+  @media only screen and (max-width: 640px) {
+    float: none !important;
+    width: auto !important;
+  }
+
+  margin: 4rem auto;
+  &.intro {
+    text-align: left;
+    p {
+      font-family: OpenSans;
+      font-size: 1.25rem;
+      color: #1e2024;
+      letter-spacing: 0;
+      line-height: 2rem;
+      margin-bottom: 2rem;
+    }
+
+    img {
+      padding: 1rem 0;
+    }
+  }
+}
+
+strong {
+  font-weight: 600;
+}
+
+h1 {
+  font-family: OpenSans-Bold;
+  font-size: 2.25rem;
+  color: #1e2024;
+  letter-spacing: 0;
+  line-height: 2rem;
+  margin: 2rem 0;
+}
+
+h2 {
+  font-family: OpenSans-Bold;
+  font-size: 1.875rem;
+  color: #1e2024;
+  letter-spacing: 0;
+  line-height: 2rem;
+  margin-bottom: 1rem;
+}
+
+h3 {
+  font-family: OpenSans-Bold;
+  font-size: 1.5rem;
+  color: #1e2024;
+  letter-spacing: 0;
+  line-height: 2rem;
+  margin-bottom: 1rem;
+}
+p {
+  font-family: OpenSans;
+  font-size: 1rem;
+  color: #1e2024;
+  letter-spacing: 0;
+  line-height: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+// Upcoming Games
+.upcoming-game {
+  ul {
+    font-size: 1.25rem;
+    color: #1e2024;
+    letter-spacing: 0;
+    line-height: 2rem;
+    text-align: left;
+  }
+}
+
+// Responive image
+.responsive {
+  width: 100%;
+  height: auto;
+}
+
+// Clearfix
+.clearfix::after {
+  display: block;
+  content: "";
+  clear: both;
+}
+
+// Message
+.message {
+  position: fixed;
+  top: 0;
+  z-index: 21;
+}
+.message {
+  -webkit-align-items: center;
+  align-items: center;
+  height: 64px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: center;
+  justify-content: center;
+  padding: 0 1rem;
+  width: 100%;
+  background-color: rgb(200, 21, 55);
+  p{
+    font-weight: 600;
+    font-size: 1.25rem;
+    color: white;
+    margin-bottom: 0;
+  }
+  a{
+    color: #fff;
+  }
+}

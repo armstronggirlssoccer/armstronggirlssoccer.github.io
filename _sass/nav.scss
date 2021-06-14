@@ -1,0 +1,26 @@
+nav {
+    text-align: left;
+    transition: all 0.3s ease;
+    ul {
+        padding: 1rem;
+        text-align: center;
+        li {
+            position: relative;
+            display: inline-block;
+        }
+    }
+    a {
+        padding: 0 1rem;
+        font-size: 1.1em;
+        font-weight: 400;
+        text-decoration: none;
+        text-transform: uppercase;
+        color: #fff;
+        position: relative;
+        display: block;
+        :hover {
+            color: #ddd;
+        }
+
+    }
+}

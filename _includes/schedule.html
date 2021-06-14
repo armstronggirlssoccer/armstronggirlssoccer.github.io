@@ -1,0 +1,20 @@
+<div class="schedule-table-widget" >
+	<table>
+		<thead>
+			<tr>
+				<th class="first-column">Date</th>
+				<th>Time</th>
+				<th>Opponent</th>
+			</tr>
+		</thead>
+		<tbody>
+			{% for schedule in site.data.schedule %}
+			<tr>
+				<td class="first-column">{{schedule.day}}, {{schedule.date}}</td>
+				<td>{{schedule.time}}</td>
+				<td>{{schedule.opponent}}</td>
+			</tr>
+			{% endfor %}
+		</tbody>
+	</table>
+</div>

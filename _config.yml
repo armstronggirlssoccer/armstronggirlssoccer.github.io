@@ -1,0 +1,17 @@
+domain: armstronggirlssocer.github.io       # if you want to force HTTPS, specify the domain without the http at the start, e.g. example.com
+url: https://armstronggirlssocer.com # the base hostname and protocol for your site, e.g. http://example.com
+    # place folder name if the site is served in a subfolder   
+
+
+defaults:
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+    values:
+      layout: "default"
+
+
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
