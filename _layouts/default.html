@@ -15,11 +15,12 @@
 			href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap"
 			rel="stylesheet"
 		/>
-		{% feed_meta %} {% seo %}
+		{% feed_meta %}
 		<script src="/assets/js/app.js"></script>
 		<title>
-			{% if page.title %}{{ page.title }} | {% endif %} Armstrong Girls Soccer
+			{% if page.title %}{{ page.title | capitalize }} | {% endif %} Armstrong Girls Soccer
 		</title>
+		{% seo %}
 	</head>
 	<body>
 		{% include header.html %}
