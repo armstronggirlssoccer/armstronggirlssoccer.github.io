@@ -1,5 +1,10 @@
-<nav>
-  <ul>
+<nav class="mobile-menu">
+  <label for="show-menu" class="show-menu">
+    <span>Menu</span>
+    <div class="lines"></div>
+  </label>
+	<input type="checkbox" id="show-menu">
+  <ul id="menu">
       <li><a href={{"/"  | relative_url }}><span>Home</span></a></li>
       <li><a href={{"/about/" | relative_url }}><span>About</span></a></li>
       <li><a href={{"/schedule/" | relative_url }}><span>Schedule</span></a></li>

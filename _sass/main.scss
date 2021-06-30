@@ -25,9 +25,8 @@ a {
 }
 
 header {
-  width: 100%;
-  min-height: 80px;
-  padding: 1rem;
+  min-height: 144px;
+  padding: 1rem 0;
   background: rgba(23, 63, 141, 1);
   text-align: center;
   // Message padding
@@ -35,7 +34,7 @@ header {
 }
 
 footer {
-  width: 100%;
+  // width: 100%;
   background-color: #efefef;
   padding: 1rem 2rem;
   text-align: center;
@@ -117,6 +116,11 @@ p {
   margin-bottom: 1rem;
 }
 
+ol, ul {
+	list-style-type: none;
+}
+
+
 // Upcoming Games
 .upcoming-game {
   ul {
@@ -125,6 +129,7 @@ p {
     letter-spacing: 0;
     line-height: 2rem;
     text-align: left;
+    list-style: none;
   }
 }
 
@@ -163,7 +168,7 @@ p {
     font-weight: 600;
     font-size: 1.25rem;
     color: white;
-    margin-bottom: 0;
+    margin: 0;
   }
   a{
     color: #fff;

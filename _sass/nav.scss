@@ -21,6 +21,126 @@ nav {
         :hover {
             color: #ddd;
         }
+    }
+}
 
+.mobile-menu {
+    // display: block;
+    // width: 100%;
+
+    text-align: center;
+    position: relative;
+    margin: 0 auto;
+}
+
+/*Strip the ul of padding and list styling*/
+.mobile-menu ul {
+    list-style-type: none;
+    margin: 0 auto;
+    padding-left: 0;
+    text-align: center;
+    width: 100%;
+    position: absolute;
+}
+
+/*Create a horizontal list with spacing*/
+
+/*Style for menu links*/
+.mobile-menu li a {
+    display: block;
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+
+    text-decoration: none;
+}
+
+/*Style for dropdown links*/
+.mobile-menu li:hover ul a {
+    background: #f3f3f3;
+    color: #2f3036;
+    height: 2.5rem;
+    line-height: 2.5rem;
+}
+
+/*Hover state for dropdown links*/
+.mobile-menu li:hover .mobile-menu ul a:hover {
+    color: red;
+}
+
+/*Hide dropdown links until they are needed*/
+.mobile-menu li ul {
+    display: none;
+}
+
+/*Make dropdown links vertical*/
+.mobile-menu li ul li {
+    display: block;
+    float: none;
+}
+
+/*Prevent text wrapping*/
+.mobile-menu li ul li a {
+    width: auto;
+    min-width: 6.25rem;
+    padding: 0 1.25rem;
+}
+
+/*Style 'show menu' label button and hide it by default*/
+.mobile-menu .show-menu {
+    text-decoration: none;
+    color: #fff;
+    text-align: center;
+    width: 100%;
+    background: rgba($color: #fff, $alpha: .2);
+    padding: .625rem 1rem;
+    display: none;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.mobile-menu .show-menu span {
+    padding-left: 1.5rem;
+}
+
+/*Hide checkbox*/
+.mobile-menu input[type="checkbox"] {
+    display: none;
+}
+
+/*Show menu when invisible checkbox is checked*/
+.mobile-menu input[type="checkbox"]:checked ~ #menu {
+    display: block;
+}
+
+/*Responsive Styles*/
+
+@media screen and (max-width: 800px) {
+    .mobile-menu .lines {
+        border-bottom: 1rem double #f8f8f8;
+        border-top: .3125rem solid #f8f8f8;
+        content: "";
+        height: .3125rem;
+        width: 1.3125rem;
+        padding-right: 1rem;
+        float: right;
+    }
+    /*Make dropdown links appear inline*/
+    .mobile-menu ul {
+        position: static;
+        display: none;
+    }
+    /*Create vertical spacing*/
+    .mobile-menu li {
+        margin-bottom: 1px;
+    }
+    /*Make all menu links full width*/
+    .mobile-menu ul li,
+    .mobile-menu li a {
+        width: 100%;
+    }
+    /*Display 'show menu' link*/
+    .mobile-menu .show-menu {
+        display: block;
     }
 }
